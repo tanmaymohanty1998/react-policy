@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'digital-7';
+    src: url('../digitalFont/digital-7.ttf') format('truetype');
+}
+
+div#countdown {
+    display: flex;
+    justify-content: space-around;
+    max-width: 173px;
+    margin-left: 15px;
+    margin-top: 4px;
+    width: 160px;
+}
+
+.simply-section {
+    min-width: 36px;
+}
+
+    .simply-section > div {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        border: 1px solid green;
+        text-align: center;
+    }
+
+.simply-amount {
+    font-size: 1.8em;
+    font-family: digital-7;
+    color: #fff;
+    background-color: #6ea26e;
+    align-self: stretch;
+    padding:6px;
+}
+
+span.simply-word {
+    font-weight: 600;
+    text-align: center;
+    color: #0a3330;
+    align-self: stretch;
+    background-color: #ededed;
+}
+
+.clock-head {
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
+#countdown > div.simply-section.simply-seconds-section > div > div {
+    animation-duration: 1s;
+    /*animation-delay: 1s;*/
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width:600px) {
+    .clock-head {
+        font-size: small;
+    }
+
+    div#countdown {
+        margin-left: 4px;
+        width: 141px;
+    }
+}
